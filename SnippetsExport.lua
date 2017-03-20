@@ -16,7 +16,7 @@ local filesPath = {
 
 local savePath = projectPath.."/lua.json"
 
-local pattern = "function%s+(%w+)%.(%w+)%("
+local pattern = "function%s+(%w+)([%.:])(%w+)%("
 local jsonTemplatePath = projectPath.."/snippetstemplate.json"
 
 local function findindir (path, wefind, r_table, intofolder)
@@ -58,8 +58,8 @@ local function Export(path)
     local f = io.open(path, "r")
     local result = ""
     for line in f:lines() do
-        for k, v in string.gmatch(line, pattern) do
-            local funcname = string.format("%s.%s", filename, v)
+        for i, j, k in string.gmatch(line, pattern) do
+            local funcname = string.format("%s%s%s", filename, j, k)
             result = result..string.format("\t%q:{\n\t\t\"body\": %q,\n\t\t\"description\": %q,\n\t\t\"prefix\": %q\n\t},\n", funcname, funcname.."()", funcname, funcname)
         end
     end

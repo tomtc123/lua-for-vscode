@@ -950,5 +950,10 @@
 		"description": "ModuleA.funcTest3",
 		"prefix": "ModuleA.funcTest3"
 	},
+	"ModuleA:funTest4":{
+		"body": "ModuleA:funTest4()",
+		"description": "ModuleA:funTest4",
+		"prefix": "ModuleA:funTest4"
+	},
 
 }

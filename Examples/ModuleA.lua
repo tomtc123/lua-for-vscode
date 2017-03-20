@@ -12,5 +12,9 @@ function ModuleA.funcTest3(...)
     -- body
 end
 
+function ModuleA:funTest4(...)
+    -- body
+end
+
 
 return ModuleA
