@@ -95,6 +95,7 @@ local function ExportAll()
     template = string.gsub(template, "//replace with my snippets", json)
     local savefile = io.open(savePath, "w")
     savefile:write(template)
+    savefile:close()
 
     print(string.format("save done ===> (%s).", savePath))
 end
