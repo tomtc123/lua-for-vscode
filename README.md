@@ -8,9 +8,7 @@ A simple lua tool for visual studio code
 
 ```
 > lua SnippetsExport.lua
-
 ```
-
 
 ![](./Examples/Images/export.png)
 ![](./Examples/Images/usage1.png)
