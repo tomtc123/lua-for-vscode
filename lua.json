@@ -1,0 +1,954 @@
+
+{
+    "_G": {
+        "body": "_G(${0:...})",
+        "description": "5.1,5.2,5.3\n\n_G",
+        "prefix": "_G"
+    },
+    "_VERSION": {
+        "body": "_VERSION(${0:...})",
+        "description": "5.1,5.2,5.3\n\n_VERSION",
+        "prefix": "_VERSION"
+    },
+    "assert": {
+        "body": "assert(${1:v}${2:[, message]})",
+        "description": "5.1,5.2,5.3\n\nassert()",
+        "prefix": "assert"
+    },
+    "bit32.arshift": {
+        "body": "bit32.arshift(${0:...})",
+        "description": "5.2\n\nbit32.arshift (x, disp)",
+        "prefix": "bit32.arshift"
+    },
+    "bit32.band": {
+        "body": "bit32.band(${0:...})",
+        "description": "5.2\n\nbit32.band (...)",
+        "prefix": "bit32.band"
+    },
+    "bit32.bnot": {
+        "body": "bit32.bnot(${0:...})",
+        "description": "5.2\n\nbit32.bnot (x)",
+        "prefix": "bit32.bnot"
+    },
+    "bit32.bor": {
+        "body": "bit32.bor(${0:...})",
+        "description": "5.2\n\nbit32.bor (...)",
+        "prefix": "bit32.bor"
+    },
+    "bit32.btest": {
+        "body": "bit32.btest(${0:...})",
+        "description": "5.2\n\nbit32.btest (...)",
+        "prefix": "bit32.btest"
+    },
+    "bit32.bxor": {
+        "body": "bit32.bxor(${0:...})",
+        "description": "5.2\n\nbit32.bxor (...)",
+        "prefix": "bit32.bxor"
+    },
+    "bit32.extract": {
+        "body": "bit32.extract(${0:...})",
+        "description": "5.2\n\nbit32.extract (n, field [, width])",
+        "prefix": "bit32.extract"
+    },
+    "bit32.lrotate": {
+        "body": "bit32.lrotate(${0:...})",
+        "description": "5.2\n\nbit32.lrotate (x, disp)",
+        "prefix": "bit32.lrotate"
+    },
+    "bit32.lshift": {
+        "body": "bit32.lshift(${0:...})",
+        "description": "5.2\n\nbit32.lshift (x, disp)",
+        "prefix": "bit32.lshift"
+    },
+    "bit32.replace": {
+        "body": "bit32.replace(${0:...})",
+        "description": "5.2\n\nbit32.replace (n, v, field [, width])",
+        "prefix": "bit32.replace"
+    },
+    "bit32.rrotate": {
+        "body": "bit32.rrotate(${0:...})",
+        "description": "5.2\n\nbit32.rrotate (x, disp)",
+        "prefix": "bit32.rrotate"
+    },
+    "bit32.rshift": {
+        "body": "bit32.rshift(${0:...})",
+        "description": "5.2\n\nbit32.rshift (x, disp)",
+        "prefix": "bit32.rshift"
+    },
+    "collectgarbage": {
+        "body": "collectgarbage(${1:[opt]}${2:[, arg]})",
+        "description": "5.1,5.2,5.3\n\ncollectgarbage()",
+        "prefix": "collectgarbage"
+    },
+    "coroutine.create": {
+        "body": "coroutine.create(${1:function})",
+        "description": "5.1,5.2,5.3\n\ncoroutine.create",
+        "prefix": "coroutine.create"
+    },
+    "coroutine.isyieldable": {
+        "body": "coroutine.isyieldable( )",
+        "description": "5.3\n\ncoroutine.isyieldable",
+        "prefix": "coroutine.isyieldable"
+    },
+    "coroutine.resume": {
+        "body": "coroutine.resume(${1:co}${2:[, val1, \u00b7\u00b7\u00b7]})",
+        "description": "5.1,5.2,5.3\n\ncoroutine.resume",
+        "prefix": "coroutine.resume"
+    },
+    "coroutine.running": {
+        "body": "coroutine.running( )",
+        "description": "5.1,5.2,5.3\n\ncoroutine.running",
+        "prefix": "coroutine.running"
+    },
+    "coroutine.status": {
+        "body": "coroutine.status(${1:co})",
+        "description": "5.1,5.2,5.3\n\ncoroutine.status",
+        "prefix": "coroutine.status"
+    },
+    "coroutine.wrap": {
+        "body": "coroutine.wrap(${1:function})",
+        "description": "5.1,5.2,5.3\n\ncoroutine.wrap",
+        "prefix": "coroutine.wrap"
+    },
+    "coroutine.yield": {
+        "body": "coroutine.yield(${1:...})",
+        "description": "5.1,5.2,5.3\n\ncoroutine.yield",
+        "prefix": "coroutine.yield"
+    },
+    "debug.debug": {
+        "body": "debug.debug()",
+        "description": "5.1,5.2,5.3\n\ndebug.debug ()",
+        "prefix": "debug.debug"
+    },
+    "debug.getfenv": {
+        "body": "debug.getfenv(${0:...})",
+        "description": "5.1\n\ndebug.getfenv (o)",
+        "prefix": "debug.getfenv"
+    },
+    "debug.gethook": {
+        "body": "debug.gethook(${1:[thread]})",
+        "description": "5.1,5.2,5.3\n\ndebug.gethook ([thread])",
+        "prefix": "debug.gethook"
+    },
+    "debug.getinfo": {
+        "body": "debug.getinfo(${1:[thread],}${2:f}${3:[, what]})",
+        "description": "5.1,5.2,5.3\n\ndebug.getinfo ([thread,] f [, what])",
+        "prefix": "debug.getinfo"
+    },
+    "debug.getlocal": {
+        "body": "debug.getlocal(${1:[thread],}${2:f}${3:[, local]})",
+        "description": "5.1,5.2,5.3\n\ndebug.getlocal ([thread,] f, local)",
+        "prefix": "debug.getlocal"
+    },
+    "debug.getmetatable": {
+        "body": "debug.getmetatable(${1:value})",
+        "description": "5.1,5.2,5.3\n\ndebug.getmetatable (value)",
+        "prefix": "debug.getmetatable"
+    },
+    "debug.getregistry": {
+        "body": "debug.getregistry()",
+        "description": "5.1,5.2,5.3\n\ndebug.getregistry ()",
+        "prefix": "debug.getregistry"
+    },
+    "debug.getupvalue": {
+        "body": "debug.getupvalue(${1:f}, ${2:up})",
+        "description": "5.1,5.2,5.3\n\ndebug.getupvalue (f, up)",
+        "prefix": "debug.getupvalue"
+    },
+    "debug.getuservalue": {
+        "body": "debug.getuservalue(${0:...})",
+        "description": "5.2,5.3\n\ndebug.getuservalue (u)",
+        "prefix": "debug.getuservalue"
+    },
+    "debug.getuservalue ": {
+        "body": "debug.getuservalue (${1:u})",
+        "description": "debug.getuservalue (u)",
+        "prefix": "debug.getuservalue "
+    },
+    "debug.setfenv": {
+        "body": "debug.setfenv(${0:...})",
+        "description": "5.1\n\ndebug.setfenv (object, table)",
+        "prefix": "debug.setfenv"
+    },
+    "debug.sethook": {
+        "body": "debug.sethook(${1:[thead,]}${2:hook}, ${3:mask}${4:[, count]})",
+        "description": "5.1,5.2,5.3\n\ndebug.sethook ([thread,] hook, mask [, count])",
+        "prefix": "debug.sethook"
+    },
+    "debug.setlocal": {
+        "body": "debug.setlocal(${1:[thead,]}${2:level}, ${3:local}, ${4:value})",
+        "description": "5.1,5.2,5.3\n\ndebug.setlocal ([thread,] level, local, value)",
+        "prefix": "debug.setlocal"
+    },
+    "debug.setmetatable": {
+        "body": "debug.setmetatable(${1:value}, ${2:table})",
+        "description": "5.1,5.2,5.3\n\ndebug.setmetatable (value, table)",
+        "prefix": "debug.setmetatable"
+    },
+    "debug.setupvalue": {
+        "body": "debug.setupvalue(${1:f}, ${2:up}, ${3:value})",
+        "description": "5.1,5.2,5.3\n\ndebug.setupvalue (f, up, value)",
+        "prefix": "debug.setupvalue"
+    },
+    "debug.setuservalue": {
+        "body": "debug.setuservalue(${1:udata}, ${2:value})",
+        "description": "5.2,5.3\n\ndebug.setuservalue (udata, value)",
+        "prefix": "debug.setuservalue"
+    },
+    "debug.traceback": {
+        "body": "debug.traceback(${1:[thread,]}${2:[message]}${3:[, level]})",
+        "description": "5.1,5.2,5.3\n\ndebug.traceback ([thread,] [message [, level]])",
+        "prefix": "debug.traceback"
+    },
+    "debug.upvalueid": {
+        "body": "debug.upvalueid( ${1:f}, ${2:n})",
+        "description": "5.2,5.3\n\ndebug.upvalueid (f, n)",
+        "prefix": "debug.upvalueid"
+    },
+    "debug.upvaluejoin": {
+        "body": "debug.upvaluejoin(${1:f1}, ${2:n1}, ${3:f2}, ${4:n2})",
+        "description": "5.2,5.3\n\ndebug.upvaluejoin (f1, n1, f2, n2)",
+        "prefix": "debug.upvaluejoin"
+    },
+    "dofile": {
+        "body": "dofile(${1:[filename]})",
+        "description": "5.1,5.2,5.3\n\ndofile ([filename])",
+        "prefix": "dofile"
+    },
+    "elif": {
+        "body": "else if ${1:condition} then\n\t${0:-- body}\n",
+        "description": "elif",
+        "prefix": "elif"
+    },
+    "error": {
+        "body": "error(${0:...})",
+        "description": "5.1,5.2,5.3\n\nerror (message [, level])",
+        "prefix": "error"
+    },
+    "file:close": {
+        "body": "file:close(${0:...})",
+        "description": "5.1,5.2,5.3\n\nfile:close ()",
+        "prefix": "file:close"
+    },
+    "file:flush": {
+        "body": "file:flush(${0:...})",
+        "description": "5.1,5.2,5.3\n\nfile:flush ()",
+        "prefix": "file:flush"
+    },
+    "file:lines": {
+        "body": "file:lines(${0:...})",
+        "description": "5.1,5.2,5.3\n\nfile:lines ()",
+        "prefix": "file:lines"
+    },
+    "file:read": {
+        "body": "file:read(${0:...})",
+        "description": "5.1,5.2,5.3\n\nfile:read (...)",
+        "prefix": "file:read"
+    },
+    "file:seek": {
+        "body": "file:seek(${0:...})",
+        "description": "5.1,5.2,5.3\n\nfile:seek ([whence] [, offset])",
+        "prefix": "file:seek"
+    },
+    "file:setvbuf": {
+        "body": "file:setvbuf(${0:...})",
+        "description": "5.1,5.2,5.3\n\nfile:setvbuf (mode [, size])",
+        "prefix": "file:setvbuf"
+    },
+    "file:write": {
+        "body": "file:write(${0:...})",
+        "description": "5.1,5.2,5.3\n\nfile:write (...)",
+        "prefix": "file:write"
+    },
+    "for": {
+        "body": "for ${1:i}=${2:1},${3:10} do\n\t${0:print(i)}\nend",
+        "description": "for i=1,10",
+        "prefix": "for"
+    },
+    "fori": {
+        "body": "for ${1:i},${2:v} in ipairs(${3:table_name}) do\n\t${0:print(i,v)}\nend",
+        "description": "for i,v in ipairs()",
+        "prefix": "fori"
+    },
+    "forp": {
+        "body": "for ${1:k},${2:v} in pairs(${3:table_name}) do\n\t${0:print(k,v)}\nend",
+        "description": "for k,v in pairs()",
+        "prefix": "forp"
+    },
+    "fun": {
+        "body": "function ${1:function_name}(${2:...})\n\t${0:-- body}\nend",
+        "description": "function",
+        "prefix": "fun"
+    },
+    "function": {
+        "body": "function ${1:function_name}(${2:...})\n\t${0:-- body}\nend",
+        "description": "function",
+        "prefix": "function"
+    },
+    "getfenv": {
+        "body": "getfenv(${0:...})",
+        "description": "5.1\n\ngetfenv ([f])",
+        "prefix": "getfenv"
+    },
+    "getmetatable": {
+        "body": "getmetatable(${1:object})",
+        "description": "5.1,5.2,5.3\n\ngetmetatable (object)",
+        "prefix": "getmetatable"
+    },
+    "if": {
+        "body": "if ${1:condition} then\n\t${0:-- body}\nend",
+        "description": "if",
+        "prefix": "if"
+    },
+    "ifel": {
+        "body": "if ${1:condition} then\n\t${2:-- body}\nelse\n\t${0:-- body}\nend",
+        "description": "ifel",
+        "prefix": "ifel"
+    },
+    "io.close": {
+        "body": "io.close(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.close ([file])",
+        "prefix": "io.close"
+    },
+    "io.flush": {
+        "body": "io.flush(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.flush ()",
+        "prefix": "io.flush"
+    },
+    "io.input": {
+        "body": "io.input(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.input ([file])",
+        "prefix": "io.input"
+    },
+    "io.lines": {
+        "body": "io.lines(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.lines ([filename])",
+        "prefix": "io.lines"
+    },
+    "io.open": {
+        "body": "io.open(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.open (filename [, mode])",
+        "prefix": "io.open"
+    },
+    "io.output": {
+        "body": "io.output(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.output ([file])",
+        "prefix": "io.output"
+    },
+    "io.popen": {
+        "body": "io.popen(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.popen (prog [, mode])",
+        "prefix": "io.popen"
+    },
+    "io.read": {
+        "body": "io.read(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.read (...)",
+        "prefix": "io.read"
+    },
+    "io.tmpfile": {
+        "body": "io.tmpfile(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.tmpfile ()",
+        "prefix": "io.tmpfile"
+    },
+    "io.type": {
+        "body": "io.type(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.type (obj)",
+        "prefix": "io.type"
+    },
+    "io.write": {
+        "body": "io.write(${0:...})",
+        "description": "5.1,5.2,5.3\n\nio.write (...)",
+        "prefix": "io.write"
+    },
+    "ipairs": {
+        "body": "ipairs(${0:...})",
+        "description": "5.1,5.2,5.3\n\nipairs (t)",
+        "prefix": "ipairs"
+    },
+    "load": {
+        "body": "load(${0:...})",
+        "description": "5.1,5.2,5.3\n\nload (func [, chunkname])",
+        "prefix": "load"
+    },
+    "loadfile": {
+        "body": "loadfile(${0:...})",
+        "description": "5.1,5.2,5.3\n\nloadfile ([filename])",
+        "prefix": "loadfile"
+    },
+    "loadstring": {
+        "body": "loadstring(${0:...})",
+        "description": "5.1\n\nloadstring (string [, chunkname])",
+        "prefix": "loadstring"
+    },
+    "local": {
+        "body": "local ${1:x} = ${0:1}",
+        "description": "local x = 1",
+        "prefix": "local"
+    },
+    "math.abs": {
+        "body": "math.abs(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.abs",
+        "prefix": "math.abs"
+    },
+    "math.acos": {
+        "body": "math.acos(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.acos",
+        "prefix": "math.acos"
+    },
+    "math.asin": {
+        "body": "math.asin(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.asin",
+        "prefix": "math.asin"
+    },
+    "math.atan": {
+        "body": "math.atan(${1:y}${2:[, x]})",
+        "description": "5.1,5.2,5.3\n\nmath.atan",
+        "prefix": "math.atan"
+    },
+    "math.atan2": {
+        "body": "math.atan2(${0:...})",
+        "description": "5.1,5.2\n\nmath.atan2 (y, x)",
+        "prefix": "math.atan2"
+    },
+    "math.ceil": {
+        "body": "math.ceil(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.ceil",
+        "prefix": "math.ceil"
+    },
+    "math.cos": {
+        "body": "math.cos(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.cos",
+        "prefix": "math.cos"
+    },
+    "math.cosh": {
+        "body": "math.cosh(${0:...})",
+        "description": "5.1,5.2\n\nmath.cosh (x)",
+        "prefix": "math.cosh"
+    },
+    "math.deg": {
+        "body": "math.deg(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.deg",
+        "prefix": "math.deg"
+    },
+    "math.exp": {
+        "body": "math.exp(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.exp",
+        "prefix": "math.exp"
+    },
+    "math.floor": {
+        "body": "math.floor(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.floor",
+        "prefix": "math.floor"
+    },
+    "math.fmod": {
+        "body": "math.fmod(${1:x},${2:y})",
+        "description": "5.1,5.2,5.3\n\nmath.fmod",
+        "prefix": "math.fmod"
+    },
+    "math.frexp": {
+        "body": "math.frexp(${0:...})",
+        "description": "5.1,5.2\n\nmath.frexp (x)",
+        "prefix": "math.frexp"
+    },
+    "math.huge": {
+        "body": "math.huge(${0:...})",
+        "description": "5.1,5.2,5.3\n\nmath.huge",
+        "prefix": "math.huge"
+    },
+    "math.ldexp": {
+        "body": "math.ldexp(${0:...})",
+        "description": "5.1,5.2\n\nmath.ldexp (m, e)",
+        "prefix": "math.ldexp"
+    },
+    "math.log": {
+        "body": "math.log(${1:x}${2:[, base]})",
+        "description": "5.1,5.2,5.3\n\nmath.log",
+        "prefix": "math.log"
+    },
+    "math.log10": {
+        "body": "math.log10(${0:...})",
+        "description": "5.1\n\nmath.log10 (x)",
+        "prefix": "math.log10"
+    },
+    "math.math.randomseed": {
+        "body": "math.math.randomseed(${1:x})",
+        "description": "math.math.randomseed",
+        "prefix": "math.math.randomseed"
+    },
+    "math.max": {
+        "body": "math.max(${1:x},${2:...})",
+        "description": "5.1,5.2,5.3\n\nmath.max",
+        "prefix": "math.max"
+    },
+    "math.maxinteger": {
+        "body": "math.maxinteger(${0:...})",
+        "description": "5.3\n\nmath.maxinteger",
+        "prefix": "math.maxinteger"
+    },
+    "math.min": {
+        "body": "math.min(${1:x},${2:...})",
+        "description": "5.1,5.2,5.3\n\nmath.min",
+        "prefix": "math.min"
+    },
+    "math.mininteger": {
+        "body": "math.mininteger(${0:...})",
+        "description": "5.3\n\nmath.mininteger",
+        "prefix": "math.mininteger"
+    },
+    "math.modf": {
+        "body": "math.modf(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.modf",
+        "prefix": "math.modf"
+    },
+    "math.pi": {
+        "body": "math.pi(${0:...})",
+        "description": "5.1,5.2,5.3\n\nmath.pi",
+        "prefix": "math.pi"
+    },
+    "math.pow": {
+        "body": "math.pow(${0:...})",
+        "description": "5.1,5.2\n\nmath.pow (x, y)",
+        "prefix": "math.pow"
+    },
+    "math.rad": {
+        "body": "math.rad(${0:...})",
+        "description": "5.1,5.2,5.3\n\nmath.rad (x)",
+        "prefix": "math.rad"
+    },
+    "math.random": {
+        "body": "math.random(${1:[m]}${2:[, n]})",
+        "description": "5.1,5.2,5.3\n\nmath.random",
+        "prefix": "math.random"
+    },
+    "math.randomseed": {
+        "body": "math.randomseed(${0:...})",
+        "description": "5.1,5.2,5.3\n\nmath.randomseed (x)",
+        "prefix": "math.randomseed"
+    },
+    "math.sin": {
+        "body": "math.sin(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.sin",
+        "prefix": "math.sin"
+    },
+    "math.sinh": {
+        "body": "math.sinh(${0:...})",
+        "description": "5.1,5.2\n\nmath.sinh (x)",
+        "prefix": "math.sinh"
+    },
+    "math.sqrt": {
+        "body": "math.sqrt(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.sqrt",
+        "prefix": "math.sqrt"
+    },
+    "math.tan": {
+        "body": "math.tan(${1:x})",
+        "description": "5.1,5.2,5.3\n\nmath.tan",
+        "prefix": "math.tan"
+    },
+    "math.tanh": {
+        "body": "math.tanh(${0:...})",
+        "description": "5.1,5.2\n\nmath.tanh (x)",
+        "prefix": "math.tanh"
+    },
+    "math.tointeger": {
+        "body": "math.tointeger(${1:x})",
+        "description": "5.3\n\nmath.tointeger",
+        "prefix": "math.tointeger"
+    },
+    "math.type": {
+        "body": "math.type(${1:x})",
+        "description": "5.3\n\nmath.type",
+        "prefix": "math.type"
+    },
+    "math.ult": {
+        "body": "math.ult(${0:...})",
+        "description": "5.3\n\nmath.ult (m, n)",
+        "prefix": "math.ult"
+    },
+    "module": {
+        "body": "module(${0:...})",
+        "description": "5.1\n\nmodule (name [, ...])",
+        "prefix": "module"
+    },
+    "next": {
+        "body": "next(${1:table}${2:[, index]})",
+        "description": "5.1,5.2,5.3\n\nnext (table [, index])",
+        "prefix": "next"
+    },
+    "os.clock": {
+        "body": "os.clock(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.clock ()",
+        "prefix": "os.clock"
+    },
+    "os.date": {
+        "body": "os.date(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.date ([format [, time]])",
+        "prefix": "os.date"
+    },
+    "os.difftime": {
+        "body": "os.difftime(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.difftime (t2, t1)",
+        "prefix": "os.difftime"
+    },
+    "os.execute": {
+        "body": "os.execute(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.execute ([command])",
+        "prefix": "os.execute"
+    },
+    "os.exit": {
+        "body": "os.exit(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.exit ([code])",
+        "prefix": "os.exit"
+    },
+    "os.getenv": {
+        "body": "os.getenv(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.getenv (varname)",
+        "prefix": "os.getenv"
+    },
+    "os.remove": {
+        "body": "os.remove(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.remove (filename)",
+        "prefix": "os.remove"
+    },
+    "os.rename": {
+        "body": "os.rename(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.rename (oldname, newname)",
+        "prefix": "os.rename"
+    },
+    "os.setlocale": {
+        "body": "os.setlocale(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.setlocale (locale [, category])",
+        "prefix": "os.setlocale"
+    },
+    "os.time": {
+        "body": "os.time(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.time ([table])",
+        "prefix": "os.time"
+    },
+    "os.tmpname": {
+        "body": "os.tmpname(${0:...})",
+        "description": "5.1,5.2,5.3\n\nos.tmpname ()",
+        "prefix": "os.tmpname"
+    },
+    "package.config": {
+        "body": "package.config(${0:...})",
+        "description": "5.2,5.3\n\npackage.config",
+        "prefix": "package.config"
+    },
+    "package.cpath": {
+        "body": "package.cpath(${0:...})",
+        "description": "5.1,5.2,5.3\n\npackage.cpath",
+        "prefix": "package.cpath"
+    },
+    "package.loaded": {
+        "body": "package.loaded(${0:...})",
+        "description": "5.1,5.2,5.3\n\npackage.loaded",
+        "prefix": "package.loaded"
+    },
+    "package.loaders": {
+        "body": "package.loaders(${0:...})",
+        "description": "5.1\n\npackage.loaders",
+        "prefix": "package.loaders"
+    },
+    "package.loadlib": {
+        "body": "package.loadlib(${0:...})",
+        "description": "5.1,5.2,5.3\n\npackage.loadlib (libname, funcname)",
+        "prefix": "package.loadlib"
+    },
+    "package.path": {
+        "body": "package.path(${0:...})",
+        "description": "5.1,5.2,5.3\n\npackage.path",
+        "prefix": "package.path"
+    },
+    "package.preload": {
+        "body": "package.preload(${0:...})",
+        "description": "5.1,5.2,5.3\n\npackage.preload",
+        "prefix": "package.preload"
+    },
+    "package.searchers": {
+        "body": "package.searchers(${0:...})",
+        "description": "5.2,5.3\n\npackage.searchers",
+        "prefix": "package.searchers"
+    },
+    "package.searchpath": {
+        "body": "package.searchpath(${0:...})",
+        "description": "5.2,5.3\n\npackage.searchpath (name, path [, sep [, rep]])",
+        "prefix": "package.searchpath"
+    },
+    "package.seeall": {
+        "body": "package.seeall(${0:...})",
+        "description": "5.1\n\npackage.seeall (module)",
+        "prefix": "package.seeall"
+    },
+    "pairs": {
+        "body": "pairs(${0:...})",
+        "description": "5.1,5.2,5.3\n\npairs (t)",
+        "prefix": "pairs"
+    },
+    "pcall": {
+        "body": "pcall(${0:...})",
+        "description": "5.1,5.2,5.3\n\npcall (f, arg1, ...)",
+        "prefix": "pcall"
+    },
+    "print": {
+        "body": "print(${1:...})",
+        "description": "5.1,5.2,5.3\n\nprint(...)",
+        "prefix": "print"
+    },
+    "rawequal": {
+        "body": "rawequal(${0:...})",
+        "description": "5.1,5.2,5.3\n\nrawequal (v1, v2)",
+        "prefix": "rawequal"
+    },
+    "rawget": {
+        "body": "rawget(${0:...})",
+        "description": "5.1,5.2,5.3\n\nrawget (table, index)",
+        "prefix": "rawget"
+    },
+    "rawlen": {
+        "body": "rawlen(${0:...})",
+        "description": "5.2,5.3\n\nrawlen (v)",
+        "prefix": "rawlen"
+    },
+    "rawset": {
+        "body": "rawset(${0:...})",
+        "description": "5.1,5.2,5.3\n\nrawset (table, index, value)",
+        "prefix": "rawset"
+    },
+    "req": {
+        "body": "require(\"${1:module}\")",
+        "description": "require()",
+        "prefix": "req"
+    },
+    "require": {
+        "body": "require(\"${1:module}\")",
+        "description": "5.1,5.2,5.3\n\nrequire()",
+        "prefix": "require"
+    },
+    "ret": {
+        "body": "return ${1:...}",
+        "description": "return ...",
+        "prefix": "ret"
+    },
+    "select": {
+        "body": "select(${1:index}, ${2:...})",
+        "description": "5.1,5.2,5.3\n\nselect (index, \u00b7\u00b7\u00b7)",
+        "prefix": "select"
+    },
+    "setfenv": {
+        "body": "setfenv(${0:...})",
+        "description": "5.1\n\nsetfenv (f, table)",
+        "prefix": "setfenv"
+    },
+    "setmetatable": {
+        "body": "setmetatable(${1:table}, ${2:metatable})",
+        "description": "5.1,5.2,5.3\n\nsetmetatable (table, metatable)",
+        "prefix": "setmetatable"
+    },
+    "string.byte": {
+        "body": "string.byte(${1:s}${2:[, i]}${3:[, j]})",
+        "description": "5.1,5.2,5.3\n\nstring.byte",
+        "prefix": "string.byte"
+    },
+    "string.char": {
+        "body": "string.char(${1:...})",
+        "description": "5.1,5.2,5.3\n\nstring.char",
+        "prefix": "string.char"
+    },
+    "string.dump": {
+        "body": "string.dump(${0:...})",
+        "description": "5.1,5.2,5.3\n\nstring.dump (function)",
+        "prefix": "string.dump"
+    },
+    "string.find": {
+        "body": "string.find(${1:s},${2:pattern}${3:[, init]}${4:[, plain]})",
+        "description": "5.1,5.2,5.3\n\nstring.find",
+        "prefix": "string.find"
+    },
+    "string.format": {
+        "body": "string.format(\"${1:formatstring}\",${2:...})",
+        "description": "5.1,5.2,5.3\n\nstring.format",
+        "prefix": "string.format"
+    },
+    "string.gmatch": {
+        "body": "string.gmatch(${1:s},${2:pattern})",
+        "description": "5.1,5.2,5.3\n\nstring.gmatch",
+        "prefix": "string.gmatch"
+    },
+    "string.gsub": {
+        "body": "string.gsub(${1:s},${2:pattern},${3:repl}${4:[, n]})",
+        "description": "5.1,5.2,5.3\n\nstring.gsub",
+        "prefix": "string.gsub"
+    },
+    "string.len": {
+        "body": "string.len(${1:s})",
+        "description": "5.1,5.2,5.3\n\nstring.len",
+        "prefix": "string.len"
+    },
+    "string.lower": {
+        "body": "string.lower(${1:s})",
+        "description": "5.1,5.2,5.3\n\nstring.lower",
+        "prefix": "string.lower"
+    },
+    "string.match": {
+        "body": "string.match(${1:s},${2:pattern}${3:[, init]})",
+        "description": "5.1,5.2,5.3\n\nstring.match",
+        "prefix": "string.match"
+    },
+    "string.pack": {
+        "body": "string.pack(${0:...})",
+        "description": "5.3\n\nstring.pack (fmt, v1, v2, ...)",
+        "prefix": "string.pack"
+    },
+    "string.packsize": {
+        "body": "string.packsize(${0:...})",
+        "description": "5.3\n\nstring.packsize (fmt)",
+        "prefix": "string.packsize"
+    },
+    "string.rep": {
+        "body": "string.rep(${1:s}, ${2:n}${3:[, rep]})",
+        "description": "5.1,5.2,5.3\n\nstring.rep",
+        "prefix": "string.rep"
+    },
+    "string.reverse": {
+        "body": "string.reverse(${1:s})",
+        "description": "5.1,5.2,5.3\n\nstring.reverse",
+        "prefix": "string.reverse"
+    },
+    "string.sub": {
+        "body": "string.sub(${1:s}, ${2:i}${3:[, j]})",
+        "description": "5.1,5.2,5.3\n\nstring.sub",
+        "prefix": "string.sub"
+    },
+    "string.unpack": {
+        "body": "string.unpack(${0:...})",
+        "description": "5.3\n\nstring.unpack (fmt, s [, pos])",
+        "prefix": "string.unpack"
+    },
+    "string.upper": {
+        "body": "string.upper(${1:s})",
+        "description": "5.1,5.2,5.3\n\nstring.upper",
+        "prefix": "string.upper"
+    },
+    "table.concat": {
+        "body": "table.concat(${1:tablename}${2:, \", \"}${3:, start_index}${4:, end_index})",
+        "description": "5.1,5.2,5.3\n\ntable.concat",
+        "prefix": "table.concat"
+    },
+    "table.insert": {
+        "body": "table.insert(${1:list},${2: [pos,]}${3: value})",
+        "description": "5.1,5.2,5.3\n\ntable.insert",
+        "prefix": "table.insert"
+    },
+    "table.maxn": {
+        "body": "table.maxn(${0:...})",
+        "description": "5.1\n\ntable.maxn (table)",
+        "prefix": "table.maxn"
+    },
+    "table.move": {
+        "body": "table.move(${0:...})",
+        "description": "5.3\n\ntable.move (a1, f, e, t [,a2])",
+        "prefix": "table.move"
+    },
+    "table.pack": {
+        "body": "table.pack(${0:...})",
+        "description": "5.2,5.3\n\ntable.pack (...)",
+        "prefix": "table.pack"
+    },
+    "table.remove": {
+        "body": "table.remove(${1:list},${2: [pos,]})",
+        "description": "5.1,5.2,5.3\n\ntable.remove",
+        "prefix": "table.remove"
+    },
+    "table.sort": {
+        "body": "table.sort(${1:tablename}${2:, sortfunction})",
+        "description": "5.1,5.2,5.3\n\ntable.sort",
+        "prefix": "table.sort"
+    },
+    "table.unpack": {
+        "body": "table.unpack(${0:...})",
+        "description": "5.2,5.3\n\ntable.unpack (list [, i [, j]])",
+        "prefix": "table.unpack"
+    },
+    "tonumber": {
+        "body": "tonumber(${1:e}${2:[, base]})",
+        "description": "5.1,5.2,5.3\n\ntonumber (e [, base])",
+        "prefix": "tonumber"
+    },
+    "tostring": {
+        "body": "tostring(${1:v})",
+        "description": "5.1,5.2,5.3\n\ntostring (v)",
+        "prefix": "tostring"
+    },
+    "type": {
+        "body": "type(${1:v})",
+        "description": "5.1,5.2,5.3\n\ntype (v)",
+        "prefix": "type"
+    },
+    "unpack": {
+        "body": "unpack(${0:...})",
+        "description": "5.1\n\nunpack (list [, i [, j]])",
+        "prefix": "unpack"
+    },
+    "utf8.char": {
+        "body": "utf8.char(${0:...})",
+        "description": "5.3\n\nutf8.char (...)",
+        "prefix": "utf8.char"
+    },
+    "utf8.charpattern": {
+        "body": "utf8.charpattern(${0:...})",
+        "description": "5.3\n\nutf8.charpattern",
+        "prefix": "utf8.charpattern"
+    },
+    "utf8.codepoint": {
+        "body": "utf8.codepoint(${0:...})",
+        "description": "5.3\n\nutf8.codepoint (s [, i [, j]])",
+        "prefix": "utf8.codepoint"
+    },
+    "utf8.codes": {
+        "body": "utf8.codes(${0:...})",
+        "description": "5.3\n\nutf8.codes (s)",
+        "prefix": "utf8.codes"
+    },
+    "utf8.len": {
+        "body": "utf8.len(${0:...})",
+        "description": "5.3\n\nutf8.len (s [, i [, j]])",
+        "prefix": "utf8.len"
+    },
+    "utf8.offset": {
+        "body": "utf8.offset(${0:...})",
+        "description": "5.3\n\nutf8.offset (s, n [, i])",
+        "prefix": "utf8.offset"
+    },
+    "ver": {
+        "body": "_VERSION",
+        "description": "_VERSION",
+        "prefix": "ver"
+    },
+    "version": {
+        "body": "_VERSION",
+        "description": "_VERSION",
+        "prefix": "version"
+    },
+    "xpcall": {
+        "body": "xpcall(${0:...})",
+        "description": "5.1,5.2,5.3\n\nxpcall (f, err)",
+        "prefix": "xpcall"
+    },
+	"ModuleA.funcTest1":{
+		"body": "ModuleA.funcTest1()",
+		"description": "ModuleA.funcTest1",
+		"prefix": "ModuleA.funcTest1"
+	},
+	"ModuleA.funcTest2":{
+		"body": "ModuleA.funcTest2()",
+		"description": "ModuleA.funcTest2",
+		"prefix": "ModuleA.funcTest2"
+	},
+	"ModuleA.funcTest3":{
+		"body": "ModuleA.funcTest3()",
+		"description": "ModuleA.funcTest3",
+		"prefix": "ModuleA.funcTest3"
+	},
+
+}
